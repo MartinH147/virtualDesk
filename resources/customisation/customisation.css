@@ -1,0 +1,257 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&display=swap);
+
+:root {
+    --keyColour: #037D7A;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans';
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #21242B;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#backBtn {
+    position: absolute;
+    top: 4vh;
+    left: 4vh;
+	color: #fff;
+	cursor: pointer;
+}
+
+p {
+    color: white;
+    font-size: 1rem;
+}
+
+
+/* Main Containers */
+
+.workspace {
+    width: 75vw;
+    height: 75vh;
+    border: 3px solid #fff;
+    border-radius: 20px; 
+    margin-left: 0.6vw;
+    margin-right: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings {
+    width: 19vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    opacity: 50%;
+}
+
+
+/* Test */
+
+.testText {
+    color: var(--keyColour);
+}
+
+
+/* Customisation */
+
+h1 {
+    color: white;
+}
+
+.themeContainer {
+    width: 100%;
+    margin: 2vh;
+}
+
+span {
+    color: white;
+}
+
+.keyColourContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 2vh;
+}
+
+.keyColourRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyColour {
+    width: 3vw;
+    height: 4vh;
+    border-radius: 8px;
+    margin: 1vh;
+}
+
+.lightSeaGreen { background-color: #037D7A;}
+.pink { background-color: #F62BA2;}
+.middleBlue { background-color: #00607A;}
+.lightGreen { background-color: #52B788;}
+.mahogany { background-color: #BC4749;}
+.lightOrange { background-color: #F4A261;}
+.fadedBlue { background-color: #577590;}
+.red { background-color: #FF0054;}
+.gold { background-color: #EEBA0B;}
+.orange { background-color: #FB5607;}
+.purple { background-color: #7209B7;}
+.lightBlue { background-color: #57D1C8;}
+
+
+.layoutContainer {
+    width: 100%;
+    margin: 2vh;
+}
+
+.layoutBox {
+    width: 14vw;
+    height: 14vh;
+    border: 1px solid #fff;
+    margin: 2vh;
+    border-radius: 5px;
+}
+
+
+
+/* Workspace */
+
+.workspaceItem {
+    border-radius: 10px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.leftside, .rightside {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 95%;
+    margin: 5vh 1vw;
+
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 95%;
+    margin: 5vh 1vw;
+}
+
+.desk {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid white;
+    height: 80%;
+}
+
+.deskrow {
+    height: 33%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;;
+}
+
+.clock, .view {
+    height: 20.5%;
+}
+
+.schedule {
+    height: 31%;
+}
+
+.rubcustContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 6%;
+    width: 100%;
+    margin: 2%;
+    margin-right: 2vw;
+}
+
+.rubbishBin, .customisation, .view {
+    height: 100%;
+    width: 40%;
+    margin: 1% 2%;
+}
+
+p .rubbishBin {
+    font-size: 0.5rem;
+}
+
+.virtualPet {
+    height: 45%;
+}
+
+.virtualPlant {
+    height: 48%;
+}
+
+.todoList {
+    height: 58%;
+}
+
+.calculator, .pomodoroTimer, .stickyNotes, .blankDiv {
+    width: 50%;
+    height: 90%;
+    margin: 2%;
+}
+
+.virtualAssistant {
+    width: 20%;
+    height: 90%;
+}
+
+
+.progressBar, .rubbishBin, .view {
+    flex-direction: row;
+}
+
+form {
+    padding: 0.5vh;
+}
+
+input {
+    padding: 0.5vh;
+    border-radius: 0.5vh;
+    border: none;
+    color: white;
+    background-color: #037D7A;
+}
+

@@ -1,0 +1,677 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans';
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #21242B;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+
+/* Workspace Panels */
+
+.leftside {
+    background-color: transparent;
+    width: 19vw;
+    height: 95vh;
+    margin: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.middle {
+    background-color: transparent;
+    width: 56vw;
+    height: 95vh;
+    margin: 1vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rightside {
+    background-color: transparent;
+    width: 19vw;
+    height: 95vh;
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Top right icons */
+.topRightIcons {
+    width: 19vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#binIcon, #viewIcon, #customisationIcon {
+    font-size: 3rem;
+}
+
+/* Universal Elements */
+
+h1 {
+    font-size: 8vh;
+    font-family: 'Noto Sans';
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-family: 'Noto Sans';
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 100%;
+}
+
+span {
+    font-size: 4vh;
+	color: #fff;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: white;
+}
+
+
+/* Clock */
+
+.clock {
+    width: 19vw;
+    height: 24vh;
+    background-color: #45464B; 
+    border-radius: 20px;
+    box-shadow: 4px 4px #2A2A2E;
+    text-decoration: none;
+}
+
+.timeContainer {
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #037D7A;
+    border-radius: 20px;
+    height: 68%;
+    margin: 1vh;
+}
+
+.dateContainer {
+    text-decoration: none;
+    display: flex;
+    text-align: flex-start;
+    justify-content: space-between;
+    height: 32%;
+    margin: 1vh;
+    padding: 1vh;
+}
+
+
+/* Schedule */
+
+.scheduleContainer {
+    width: 19vw;
+    height: 38vh;
+    background-color: #45464B; 
+    border-radius: 20px;
+    box-shadow: 4px 4px #2A2A2E;
+    text-decoration: none;
+}
+
+.schedule {
+    text-decoration: none;
+    margin: 0vw;
+	width: 100%;
+}
+
+tbody {
+	display: block;
+	max-height: 37vh;
+	overflow: scroll;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+tr {
+	width: 100%;
+	height: 7vh;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+    margin: 2vh 1vh;
+}
+
+th {
+    width: 20%;
+	height: 100%;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Noto Sans';
+    color: white;
+    font-weight: bold;
+    text-align: center;
+	border: 2px solid #037D7A;
+    border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.day {
+	color: white;
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 2vh;
+}
+
+.event {
+	width: 80%;
+	margin: 0;
+	padding: 0;
+}
+
+.eventForm {
+	width: 92%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.eventName {
+    width: 100%;
+	height: 7.5vh;
+	background-color: #037D7A;
+    border-radius: 10px;
+    border: none;
+    color: white;
+	cursor: pointer;
+	align-self: center;
+	margin-left: 1vh;
+}
+
+
+/* Desk and Containers */
+
+.desk {
+    width: 56vw;
+    height: 77vh;
+    background-color: #2F2F33; 
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.deskFeatures {
+    width: 100%;
+    height: 41%;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    background-color: transparent;
+}
+
+.mAIContainer {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    background-color: transparent;
+}
+
+.notesSpace {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    background-color: transparent;
+}
+
+.blankSpace {
+    height: 100%;
+    width: 15vw;
+}
+
+
+/* Calculator */
+
+.calculatorContainer {
+    height: 30vh;
+    width: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.calculator {
+    width: 100%;
+    height: 100%;
+    background-color: #45464B; 
+    border-radius: 20px;
+    box-shadow: 4px 4px #2A2A2E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calcRow {
+    margin: 0 5%;;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+
+#operator {
+    background-color: #393A3E;
+}
+
+.calculator form input {
+    height: 20%;
+    width: 20%;
+    background-color: #2F2F33;
+    border-radius: 10px;
+    padding: 1vh;
+    margin: 1px;
+    color: white;
+    font-size: 0.8rem;
+    font-family: 'Noto Sans';
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+form .display {
+    display: flex;
+    justify-content: end;
+    margin: 0 5% 5%;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+}
+
+#equals {
+    background-color: #037D7A;
+    width: 45%;
+}
+
+
+/* mAI */
+.mAI {
+    width: 22vh;
+    height: 22vh;
+    background-color: transparent; 
+    border-radius: 10px;
+    cursor: default;
+    padding: 0;
+    margin: 0;
+}
+
+#mAIIcon {
+    font-size: 22vh;
+	color: #fff;
+}
+
+
+/* Sticky Notes */
+.stickyNotes {
+    width: 10vw;
+    height: 10vw;
+    background-color: #45464B; 
+    color: white;
+    border-radius: 5px;
+    box-shadow: 4px 4px #2A2A2E;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.stickyNotesTitle {
+    font-size: 1.5rem;
+    font-family: 'Noto Sans';
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    word-wrap: break-word;
+}
+
+.newNote {
+    width: 10vw;
+    height: 10vw;
+    background-color: #45464B; 
+    border-radius: 5px;
+    box-shadow: 4px 4px #2A2A2E;
+    align-self: flex-end;
+    border: none;
+    margin: 1vh;
+    display: flex;
+    text-align: center;
+    color: white;
+}
+
+/* Customisation */
+.customisation {
+    width: 5vw;
+    height: 5vw;
+    background-color: red; 
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.fa-gear {
+    width: 5vw;
+    height: 5vw;
+}
+
+
+/* To-do List and Progress Bar */
+.todoList {
+    width: 19vw;
+    height: 58vh;
+    background-color: #45464B; 
+    border-radius: 20px;
+    box-shadow: 4px 4px #2A2A2E;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+}
+
+.todo {
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Noto Sans';
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: #037D7A;
+    border-radius: 10px;
+    padding: 1vh 5vh;
+    display: flex;
+    justify-content: flex-start;
+    margin: 1vh;
+}
+
+.todoTimeframe {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.today, .thisweek, .later {
+    margin-bottom: 2vh;
+}
+
+.todayContents, .thisweekContents, .laterContents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 1vh;
+    padding: 2vh;
+    list-style-type: none;
+    max-height: 50vh;
+    overflow: scroll;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.task {
+    margin: 1vh;
+    color: #fff;
+    font-size: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#checkbox {
+    color: #747578;
+    height: 2vh;
+    width: 2vh;
+    transition: display 2s ease-in-out;
+}
+
+.urgency {
+    font-size: 1rem;
+    padding-left: 1vh;
+}
+
+.taskName {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Noto Sans';
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background: transparent;
+    border: none;
+    max-width: 13.5vw;
+    text-overflow: ellipsis;
+}
+
+
+/* Progress Bar */
+.progressBar {
+    width: 40vw;
+    height: 15px;
+    background-color: #45464B; 
+    border-radius: 50px;
+    margin: 10px;
+    position: relative;
+}
+
+.progress {
+    width: 100%;
+    height: 100%;
+    background-color: #037D7A; 
+    border-radius: 50px;
+    display: block;
+}
+
+/* Virtual Plant */
+.virtualPlant {   
+    width: 19vw;
+    height: 29vh;
+    background-color: transparent; 
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 50%;
+}
+
+#plant {
+    font-size: 10rem;
+}
+
+.comingSoon {
+    font-size: 1rem;
+}
+
+/* Pomodoro Timer */
+.pomodoroTimer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.timer {
+    padding: 3px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    font-size: 1.5rem;
+    font-size: 4rem;
+    color: #fff;
+    z-index: 1;
+    background-color: #45464B;
+    padding: 3vh;
+    margin: 0;
+    border-radius: 2000px;
+}
+
+#timeRemaining {
+    font-size: 2rem;
+    color: #fff;
+    font-family: "Noto Sans";
+    z-index: 999;
+}
+
+.timerProgress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timerProgressCircle {
+    transition: 0.5s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke: #037D7A;
+}
+
+
+.timerControls {
+    width: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.startstop {
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 1vh;
+    z-index: 999;
+}
+
+.period {
+    font-size: 1rem;
+    color: #fff;
+    font-family: "Noto Sans";
+}
+
+/* If timer is less than 50% */
+.timer .less::before {
+    background: #45464B;
+    transform: rotate(calc(((var(--i) - 0) * 0.01turn)));
+}
+
+#startstop {
+    position: absolute;
+    top: 62%;
+    left: 43%;
+    color: #fff;
+    z-index: 999;
+    cursor: pointer;
+}
+
+
+/* View */
+
+.view {
+    width: 17vw;
+    height: 100%;
+    background-color: #45464B;
+    border-radius: 15px;
+    box-shadow: 4px 4px #2A2A2E;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+}
+
+
+/* Virtual Pet */
+.virtualPet {
+    height: 26vh;
+    width: 17vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 50%;
+}
+
+#pet {
+    font-size: 10rem;
+    text-decoration: none;
+}
+
+
+/* Rubbish bin */
+#binIcon {
+    opacity: 50%;
+    cursor: default;
+}

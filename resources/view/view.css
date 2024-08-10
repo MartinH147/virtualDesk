@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #21242B;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#close {
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+	color: #fff;
+	cursor: pointer;
+}
+
+.mainImage {
+    background-size: cover;
+}
+
+#changeImage {
+    position: absolute;
+    bottom: 2vh;
+    left: 2vh;
+	color: #fff;
+	cursor: pointer;
+    z-index: 999;
+}
+
+#uploadImage {
+    color: #fff;
+	cursor: pointer;
+    display: none;
+    margin: 2vh;
+    font-size: 5vh;
+    opacity: 50%;
+}
+
+.defaultImages {
+    position: absolute;
+    bottom: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#defaultImage1, #defaultImage2, #defaultImage3, #defaultImage4, #defaultImage5, #defaultImage6, #defaultImage7 {
+    height: 10.2vh;
+    width: 18.2vh;
+    
+    margin: 1vh;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 4px 4px #21242B;
+    display: none;
+    transition: display 0.5s ease-in;
+    cursor: pointer;
+}
